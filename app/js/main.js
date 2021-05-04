@@ -99,7 +99,79 @@ $(function(){
     $('.js-nav').toggleClass('open');
     $('.js-nav__list').toggleClass('show');
   });
-  
+
+
+
+
+ 
+    $('.company__line').slick({
+      responsive: [
+      {
+        breakpoint: 2048,
+        settings: "unslick"
+    },
+    {
+      breakpoint: 751,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: false,
+        dots: true,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 711,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false
+      }
+    }
+   
+  ]
+  });
+
+
+  $('.teacher__down ').slick({
+    responsive: [
+    {
+      breakpoint: 2048,
+      settings: "unslick"
+  },
+  {
+    breakpoint: 751,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      infinite: false,
+      dots: true,
+      arrows: false
+    }
+  },
+ 
+  {
+    breakpoint: 507,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false
+    }
+  }
+ 
+]
+});
   
 
-})();
+});

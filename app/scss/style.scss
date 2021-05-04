@@ -558,6 +558,7 @@ animation-duration: 3s;
 .profession__item {
     text-align: center;
     max-width: 350px;
+    padding: 0 10px;
   
     
 }
@@ -584,7 +585,7 @@ font-size: 24px;
 line-height: 140%;
 }
 .profession__info-text {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 160%;
     text-align: center;
     color: #FFFFFF;
@@ -634,7 +635,8 @@ line-height: 140%;
 }
 .company__line-item {
     padding: 30px  20px;
-    border: 1px solid #FFFFFF;    
+    border: 1px solid #FFFFFF;   
+    
 }
 
 
@@ -819,7 +821,7 @@ line-height: 140%;
   
   @media screen and (max-width: 900px) {
     .programm__timeline .programm__list .programm__item .programm__wrap {
-      width: 250px;
+      width: 330px;
     }
     .programm__timeline .programm__list .programm__item:nth-child(even)  .programm__wrap {
       left: -289px;
@@ -829,16 +831,16 @@ line-height: 140%;
   
   @media screen and (max-width: 600px) {
     .programm__timeline .programm__list .programm__item {
-      margin-left: 20px;
+      margin-left: 10px;
     }
     .programm__timeline .programm__list .programm__item .programm__wrap {
-      width: calc(100vw - 91px);
+        width: 360px;
     }
     .programm__timeline .programm__list .programm__item:nth-child(even)  .programm__wrap {
       left: 45px;
     }
     .programm__timeline .programm__list .programm__item:nth-child(even) .programm__wrap::before {
-     
+     left: -39px;
     }
   }
 
@@ -895,6 +897,7 @@ line-height: 140%;
 
 .teacher__card-img {
     border-radius: 50%;
+    margin: 0 auto;
 }
 .teacher__info {
     padding: 40px 0;
@@ -1289,6 +1292,7 @@ margin-bottom: 15px;
         .header__logo{
             position: absolute;
             left: 20px;
+            display: none;
         }
 
 
@@ -1323,6 +1327,7 @@ margin-bottom: 15px;
 
         .header__down{
             text-align: center;
+            padding-top: 10px;
 
         }
         .header__down-logo{
@@ -1330,8 +1335,8 @@ margin-bottom: 15px;
         }
 
         .header__down-logo-img{
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             margin-bottom: 30px;
         }
 
@@ -1342,10 +1347,7 @@ margin-bottom: 15px;
         }
 
 
-        .header__down {
-            padding-top: 50px;
-            
-         }
+        
 
          .header__countdown-number{
             margin-right:10px
@@ -1358,6 +1360,41 @@ margin-bottom: 15px;
          .about-us__info{
              padding: 0 10px;
          }
+    }
+
+    @media (max-width: 800px){
+        .company__top-title{
+            display: block;
+            font-size: 40px;
+            padding-left: 0;
+            text-align: center;
+            padding-top: 100px;
+            &::before{
+                content: url(../images/company/decorate.png);
+                position: absolute;
+                left: 40%;
+                top: 0px;
+              
+              
+            }
+        }
+
+        .teacher__top-title{
+            display: block;
+            font-size: 40px;
+            padding-left: 0;
+            text-align: center;
+            padding-top: 100px;
+            &::before{
+                content: url(../images/company/decorate.png);
+                position: absolute;
+                left: 40%;
+                top: 0px;
+              
+              
+            }
+
+        }
     }
 
 
@@ -1463,6 +1500,73 @@ margin-bottom: 15px;
       
     }
 
+    @media (max-width: 751px){
+        .company__line-item{
+            border-top: none;
+            border-bottom: none;
+        }
+
+        .slick-dots {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin-top: 40px;
+          }
+          
+          .slick-dots button {
+            border: none;
+            height: 15px;
+            width: 15px;
+            border-radius: 15px;
+            background-color: #000;
+            border: 2px solid #fff;
+            
+            outline: none;
+            cursor: pointer;
+            margin: 0 1px;
+            transition: width .2s linear;
+            font-size: 0;
+            margin-right: 20px;
+          }
+          
+          .slick-active {
+            text-align: center;
+          }
+          
+          
+          .slick-active button{
+              border: none;
+            width: 30px;
+            background:#7C6AFA;
+          }
+    }
+
+    @media (max-width: 694px){
+        .company__top-title{
+            font-size: 30px;
+        }
+    }
+
+
+    @media (max-width: 673px){
+        .header__down-title{
+            font-size: 45px;
+        }
+    }
+
+    @media (max-width: 673px){
+        .footer__top-title{
+            font-size: 35px;
+        }
+
+        .footer__top-text{
+            font-size: 15px;
+        }
+    }
+
+    
+
     @media (max-width: 601px){
         .header{
             background-image: url(../images/header/bg.png);
@@ -1480,13 +1584,41 @@ margin-bottom: 15px;
         }
     }
 
+    @media (max-width: 558px){
+        .company__top-title{
+            font-size: 28px;
+        }
+
+        .teacher__top-title{
+            display: block;
+            font-size: 28px;
+           
+
+        }
+    }
+
     @media (max-width: 521px){
         .about-us__info-title{
             font-size: 38px;
         }
 
+        .programm__top-title{
+            font-size: 28px;
+            display: block;
+            &::before{
+                content: url(../images/programm/decorate.png);
+                position: absolute;
+               
+                top: 0px;
+                left: 40%;
+              
+              
+            }
+        }
 
-
+        .programm__top-text{
+            font-size: 13px;
+        }
         .about-us__info-text{
             font-size: 17px;
 
@@ -1503,7 +1635,15 @@ margin-bottom: 15px;
     -webkit-border-image: -webkit-linear-gradient(#C89AFC, #7C6AFA);
     border-image-slice: 1;
         }
+
+
+        .profession__top-title{
+            font-size: 35px;
+        }
     }
+
+
+   
 
 
     @media (max-width: 500px){
@@ -1583,6 +1723,29 @@ margin-bottom: 15px;
                 top: 50%;
             }
         }
+
+        .footer__form-input{
+            border-radius: 20px;
+            width: 100%;
+            padding: 17px 10px 17px 30px;
+        }
+        .footer__form {
+            
+            display: block;
+          text-align: center;
+           width: 100%;
+          transform: translateX(30px);
+          padding-bottom: 90px;
+            
+        }
+
+        .footer__form-btn{
+            display: block;
+            justify-content: center;
+            left: 20%;
+            margin-top: 10px;
+
+        }
     }
 
 
@@ -1654,6 +1817,7 @@ margin-bottom: 15px;
     }
 }
 
+
     .about-us__box::after{
         content: "";
         position: absolute;
@@ -1681,6 +1845,18 @@ margin-bottom: 15px;
     
 }
 }
+
+
+@media (max-width: 487px){
+    .company__line-item-img{
+        margin: 0 auto;
+        
+    }
+
+    .company__line-item{
+        border: 0;
+    }
+}
   
 
     @media (max-width: 423px){
@@ -1690,6 +1866,11 @@ margin-bottom: 15px;
     }
 
 
+    @media (max-width: 391px){
+    .profession__top-title{
+        font-size: 28px;
+    }
+    }
 
 
 
@@ -1711,6 +1892,20 @@ margin-bottom: 15px;
         .fast-start__item-1{
           position: relative;
           left: -4%;
+        }
+
+        .programm__top-title{
+            font-size: 28px;
+            display: block;
+            &::before{
+                content: url(../images/programm/decorate.png);
+                position: absolute;
+               
+                top: 0px;
+                left: 30%;
+              
+              
+            }
         }
     }
 
