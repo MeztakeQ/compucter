@@ -172,6 +172,11 @@ $(function(){
  
 ]
 });
+
+
+$('.parallax-window').parallax({
+ 
+});
   
 
 });
