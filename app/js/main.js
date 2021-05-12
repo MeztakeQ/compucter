@@ -68,8 +68,6 @@ $(function(){
 
   var items = document.querySelectorAll(" .programm__timeline .programm__item");
 
-  // check if an element is in viewport
-  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
   function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
@@ -88,7 +86,7 @@ $(function(){
     }
   }
 
-  // listen for events
+
   window.addEventListener("load", callbackFunc);
   window.addEventListener("resize", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
@@ -105,6 +103,8 @@ $(function(){
 
  
     $('.company__line').slick({
+    
+     
       responsive: [
       {
         breakpoint: 2048,
@@ -168,11 +168,11 @@ $(function(){
       dots: true,
       arrows: false
     }
-  }
- 
+  } 
 ]
-});
 
+
+});
 
 $('.parallax-window').parallax({
  
@@ -180,3 +180,6 @@ $('.parallax-window').parallax({
   
 
 });
+
+
+
